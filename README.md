@@ -93,7 +93,7 @@ We used Grad-CAM to validate that the model is looking at the right features.
   - ResNet50: Occasionally distracted by background noise (road, trees).(Place your Grad-CAM image here)
 2. Visual Similarity Search
 A demo application that utilizes the feature embeddings to find visually similar cars.
-- Input: An image of a red sedan.
+- Input: An image of a car.
 - Output: Top-5 most similar cars from the database (robust to angle and lighting).
 
 <img width="2329" height="824" alt="car-classification-1" src="https://github.com/user-attachments/assets/259974be-5e11-42fd-a1ca-9d62defb6289" />
