@@ -96,6 +96,9 @@ A demo application that utilizes the feature embeddings to find visually similar
 - Input: An image of a red sedan.
 - Output: Top-5 most similar cars from the database (robust to angle and lighting).
 
+<img width="2329" height="824" alt="car-classification-1" src="https://github.com/user-attachments/assets/259974be-5e11-42fd-a1ca-9d62defb6289" />
+<img width="1570" height="375" alt="car-classification-2" src="https://github.com/user-attachments/assets/8eee2928-72c1-4928-8e43-80fc2ae61b18" />
+
 ## Future Work
 - Object Detection: Integrate YOLOv8 to localize and crop the vehicle before classification to remove background noise.
 - Vision Transformers (ViT): Explore self-attention mechanisms to better capture global context.
