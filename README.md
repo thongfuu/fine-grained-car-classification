@@ -99,6 +99,71 @@ A demo application that utilizes the feature embeddings to find visually similar
 <img width="2329" height="824" alt="car-classification-1" src="https://github.com/user-attachments/assets/259974be-5e11-42fd-a1ca-9d62defb6289" />
 <img width="1570" height="375" alt="car-classification-2" src="https://github.com/user-attachments/assets/8eee2928-72c1-4928-8e43-80fc2ae61b18" />
 
+## Setup & Usage (Google Colab)
+
+Since this project relies on **Google Colab** and **Google Drive** for storage, please follow the directory structure below to ensure the notebooks run correctly.
+
+### 1. Directory Structure
+Create a main folder in your Google Drive (e.g., `Car_Classification_Project`) and organize the files as follows:
+
+```text
+My Drive/
+├── Datasets/                                 # Folder 1: Raw Data
+│   └── stanford_car_dataset_by_classes.zip   # Download from Kaggle (Do NOT unzip)
+│
+├── Model/                                    # Folder 2: Trained Weights & Artifacts
+│   ├── car_database.pkl                      # For Similarity Search
+│   ├── FinalResnet_Final/
+│   │   ├── class_names.json
+│   │   ├── resnet50_final.keras
+│   │   ├── history/
+│   │   │   ├── history_phase1.pkl
+│   │   │   └── history_phase2.pkl
+│   │   ├── logs/
+│   │   │   ├── log_phase1.csv
+│   │   │   └── log_phase2.csv
+│   │   │   └── log_phase3.csv
+│   │   └── models/
+│   │       ├── resnet50_final_final_final.keras
+│   │       ├── resnet_best_final.keras
+│   │       └── resnet_phase1_head.keras
+│   └── FinalEffnet_v2/
+│       ├── class_names.json
+│       ├── effnet_final_complete.keras
+│       ├── history/
+│       │   └── history_phase1.pkl
+│       ├── logs/
+│       │   ├── log_phase1.csv
+│       │   └── log_phase2.csv
+│       └── models/
+│           ├── effnet_best_final.keras
+│           ├── effnet_final_complete.keras
+│           └── effnet_phase1.keras
+│
+└── Car_Classification.ipynb            # Demo Notebook
+```
+
+2. Prerequisites
+Dataset: Download the Stanford Cars Dataset and upload it to the dataset/ folder.
+
+Pre-trained Weights (Optional): If you want to run the Demo/Inference without training from scratch, download the .h5 weights and vector_db.npy (from the link below) and place them in the Model/ folder.
+
+Download Pre-trained Models & DB
+
+3. Running the Code
+Open the .ipynb file in Google Colab.
+
+Mount Drive: The notebook will ask for permission to access your Google Drive.
+
+Check Paths: Ensure the root_path variable in the notebook matches your Drive folder name.
+
+Python
+
+# Example in code
+ROOT_PATH = '/content/drive/MyDrive/Car_Classification_Project'
+Run all cells. The training logs and best models will be automatically saved to the Model/ directory.
+
+
 ## Future Work
 - Object Detection: Integrate YOLOv8 to localize and crop the vehicle before classification to remove background noise.
 - Vision Transformers (ViT): Explore self-attention mechanisms to better capture global context.
