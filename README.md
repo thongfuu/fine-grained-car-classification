@@ -108,11 +108,11 @@ Create a main folder in your Google Drive (e.g., `Car_Classification_Project`) a
 
 ```text
 My Drive/
-├── Datasets/                                 # Folder 1: Raw Data
-│   └── stanford_car_dataset_by_classes.zip   # Download from Kaggle (Do NOT unzip)
+├── Datasets/                                          # Folder 1: Raw Data
+│   └── stanford_car_dataset_by_classes.zip            # Download from Kaggle (Do NOT unzip)
 │
-├── Model/                                    # Folder 2: Trained Weights & Artifacts
-│   ├── car_database.pkl                      # For Similarity Search
+├── Model/                                             # Folder 2: Trained Weights & Artifacts
+│   ├── car_database.pkl                               # For Similarity Search
 │   ├── FinalResnet_Final/
 │   │   ├── class_names.json
 │   │   ├── resnet50_final.keras
@@ -140,15 +140,17 @@ My Drive/
 │           ├── effnet_final_complete.keras
 │           └── effnet_phase1.keras
 │
-└── Car_Classification.ipynb            # Demo Notebook
+├── demo_project_cv.ipynb                                # Demo Notebook
+├── efficientnetb4_cv_project.ipynb
+├── resnet50_cv_project.ipynb
 ```
 
 2. Prerequisites
-Dataset: Download the Stanford Cars Dataset and upload it to the dataset/ folder.
-
-Pre-trained Weights (Optional): If you want to run the Demo/Inference without training from scratch, download the .h5 weights and vector_db.npy (from the link below) and place them in the Model/ folder.
-
-Download Pre-trained Models & DB
+    1. Dataset: Download the dataset from [Kaggle](https://www.kaggle.com/datasets/jutrera/stanford-car-dataset-by-classes-folder).
+        - Important: Upload the .zip file directly. Do not unzip it manually (the notebook handles extraction to temporary storage for speed).
+    2. Pre-trained Models: To run the Demo or Similarity Search without retraining:
+        - Download the Model/ folder contents from the link below and place them in your Drive as shown above.
+        - [Link to Download Weights & Embeddings](https://drive.google.com/drive/folders/14HzPYo1hmUjNpXawaXl_qD7Ttt7lNLie?usp=sharing)
 
 3. Running the Code
 Open the .ipynb file in Google Colab.
