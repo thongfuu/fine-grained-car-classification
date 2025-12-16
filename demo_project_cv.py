@@ -82,7 +82,7 @@ feature_extractor = tf.keras.Model(
 
 """## Building Similarity Database
 
-### ไม่จำเป็นต้องรัน (สำหรับสร้าง database)
+### ไม่จำเป็นต้องรัน (สำหรับสร้าง database) (Do not run)
 """
 
 SAVE_PATH = '/content/drive/MyDrive/Model/car_database.pkl' # เซฟลง Drive
