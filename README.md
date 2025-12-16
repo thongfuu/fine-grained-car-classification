@@ -153,18 +153,10 @@ My Drive/
         - [Link to Download Weights & Embeddings](https://drive.google.com/drive/folders/14HzPYo1hmUjNpXawaXl_qD7Ttt7lNLie?usp=sharing)
 
 3. Running the Code
-Open the .ipynb file in Google Colab.
-
-Mount Drive: The notebook will ask for permission to access your Google Drive.
-
-Check Paths: Ensure the root_path variable in the notebook matches your Drive folder name.
-
-Python
-
-# Example in code
-ROOT_PATH = '/content/drive/MyDrive/Car_Classification_Project'
-Run all cells. The training logs and best models will be automatically saved to the Model/ directory.
-
+    1. Open demo_project.ipynb in Google Colab.
+    2. Mount Drive: Run the cell to mount Google Drive.
+    3. Run all cells except those marked as "do not run".
+    4. Upload the image of the car you want the model to guess. If you name the file one of the class names in the dataset, it will allow the model to check if the guess is correct or incorrect. If you don't name the file, it will just give a guess.
 
 ## Future Work
 - Object Detection: Integrate YOLOv8 to localize and crop the vehicle before classification to remove background noise.
@@ -174,10 +166,10 @@ Run all cells. The training logs and best models will be automatically saved to 
 
 ## Authors
 Department of Computer Science, Srinakharinwirot University
+- Korawich Chunoi - korawich.chunoi@g.swu.ac.th
 - Kunanon Hareutaitam - kunanon.mas@g.swu.ac.th
 - Tanawan Manamongkon - tanawan.first@g.swu.ac.th
 - Ratthasas Chantra - ratthasas.chantra@g.swu.ac.th
-- Korawich Chunoi - korawich.chunoi@g.swu.ac.th
 
 ## References
 - [Stanford Cars Dataset (Kaggle)](https://www.kaggle.com/datasets/jutrera/stanford-car-dataset-by-classes-folder)
