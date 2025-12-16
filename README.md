@@ -152,7 +152,7 @@ My Drive/
         - Download the Model/ folder contents from the link below and place them in your Drive as shown above.
         - [Link to Download Weights & Embeddings](https://drive.google.com/drive/folders/14HzPYo1hmUjNpXawaXl_qD7Ttt7lNLie?usp=sharing)
 
-3. Running the Code
+3. Running the Demo
     1. Open demo_project.ipynb in Google Colab.
     2. Mount Drive: Run the cell to mount Google Drive.
     3. Run all cells except those marked as "do not run".
