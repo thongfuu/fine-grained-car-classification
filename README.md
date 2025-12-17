@@ -141,7 +141,7 @@ My Drive/
 │
 ├── demo_project_cv.ipynb                                # Demo Notebook
 ├── efficientnetb4_cv_project.ipynb
-├── resnet50_cv_project.ipynb
+└── resnet50_cv_project.ipynb
 ```
 
 2. Prerequisites
