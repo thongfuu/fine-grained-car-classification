@@ -61,13 +61,12 @@ EfficientNet converges faster due to better feature reuse capabilities.
 2. Phase 2 (Full): Unfreeze all layers with $LR=1e^{-4}$.
 
 ## Results & Performance
-We achieved State-of-the-Art results for a corrected baseline.
 
-## ResNet50
+### ResNet50
 <img width="1943" height="796" alt="car-classification-resnet" src="https://github.com/user-attachments/assets/72ccd8ba-70f5-4f3d-9a4a-b8116b281d57" />
 <img width="1214" height="528" alt="car-classification-resnet-graph" src="https://github.com/user-attachments/assets/f0972ab9-1579-45d4-beca-421e21540990" />
 
-## EfficientNetB4
+### EfficientNetB4
 <img width="1943" height="796" alt="car-classification-effnet" src="https://github.com/user-attachments/assets/08f29966-eafb-45ac-a02b-7f9423a10a4a" />
 <img width="1214" height="528" alt="car-classification-effnet-graph" src="https://github.com/user-attachments/assets/19a2e8c4-b167-4038-a8e2-0d652d653ab4" />
 
