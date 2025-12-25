@@ -163,11 +163,10 @@ My Drive/
         - Download the Model/ folder contents from the link below and place them in your Drive as shown above.
         - [Link to Download Weights & Embeddings](https://drive.google.com/drive/folders/14HzPYo1hmUjNpXawaXl_qD7Ttt7lNLie?usp=sharing)
 
-3. Running the Demo
-    1. Open demo_project.ipynb in Google Colab.
-    2. Mount Drive: Run the cell to mount Google Drive.
-    3. Run all cells except those marked as "do not run".
-    4. Upload the image of the car you want the model to guess. If you name the file one of the class names in the dataset, it will allow the model to check if the guess is correct or incorrect. If you don't name the file, it will just give a guess.
+3. Training the Models
+    1. Open `resnet50_cv_project.ipynb` or `efficientnetb4_cv_project.ipynb` in Google Colab.
+    2. Mount Drive: Ensure the directory structure matches step 1.
+    3. Run All Cells: The notebook will load the dataset from the zip file and start the training process.
 
 ## Future Work
 - Object Detection: Integrate YOLOv8 to localize and crop the vehicle before classification to remove background noise.
