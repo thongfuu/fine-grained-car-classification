@@ -98,12 +98,24 @@ A demo application that utilizes the feature embeddings to find visually similar
 <img width="2329" height="824" alt="car-classification-1" src="https://github.com/user-attachments/assets/259974be-5e11-42fd-a1ca-9d62defb6289" />
 <img width="1570" height="375" alt="car-classification-2" src="https://github.com/user-attachments/assets/8eee2928-72c1-4928-8e43-80fc2ae61b18" />
 
-## Setup & Usage (Google Colab)
+## Quick Start (Live Demo)
 
-Since this project relies on **Google Colab** and **Google Drive** for storage, please follow the directory structure below to ensure the notebooks run correctly.
+Experience the model in action immediately without setting up any files. The notebook includes an automated script to download necessary weights and databases.
 
-### 1. Directory Structure
-Create a main folder in your Google Drive (e.g., `Car_Classification_Project`) and organize the files as follows:
+<a href="https://colab.research.google.com/github/thongfuu/fine-grained-car-classification/blob/main/demo_project_cv.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+
+1.  **Click the "Open in Colab" badge** above.
+2.  **Run All Cells:** The script will automatically download the required models (ResNet/EfficientNet) and the car database.
+3.  **Upload & Predict:** Use the upload widget to test with your own car images.
+
+---
+
+## Full Setup (For Training/Retraining)
+
+If you wish to **reproduce the training results** or train the models from scratch (`resnet50_cv_project.ipynb` or `efficientnetb4_cv_project.ipynb`), please follow the full setup guide below.
+
+### 1. Directory Structure (Google Drive)
+Create a main folder in your Google Drive (e.g., `Car_Classification_Project`) and organize the files as follows to ensure logs and checkpoints are saved correctly:
 
 ```text
 My Drive/
